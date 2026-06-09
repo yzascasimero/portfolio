@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const aboutFrame = document.getElementById('about-frame');
   if (aboutFrame) {
     if (YZA.about.photo) {
-      aboutFramme.style.backgroundImage = `url(${YZA.about.photo})`;
+      aboutFrame.style.backgroundImage = `url(${YZA.about.photo})`;
       aboutFrame.style.backgroundSize = 'cover';
-      aboutFrame.style.backgroundPosition = 'center top';
+      aboutFrame.style.backgroundPosition = 'center';
     }
     aboutFrame.querySelector('.badge').textContent = YZA.about.badge;
   }

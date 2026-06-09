@@ -306,6 +306,15 @@ nav {
   font-size: 8rem; color: var(--frame-text); letter-spacing: 0.05em;
   position: relative; overflow: hidden;
   transition: background 0.5s, border-color 0.5s, color 0.5s;
+
+}
+.about-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(204, 255, 0, 0.12);
+  pointer-events: none;
+  z-index: 1;
 }
 .about-frame-badge {
   position: absolute; bottom: -0.75rem; right: -0.75rem;
