@@ -25,7 +25,7 @@ const YZA = {
   about: {
     initials:  "YC",
     badge:     "Class of '26",
-    photo:  "profile.jpg",  
+    photo:  "asset/profile.jpg",  
     title:     ["Builder.", "Analyst.", "Curious mind."],  // 3 lines, middle gets lime color
     paragraphs: [
       "Fresh CS graduate with strong chops in <strong>software development</strong> and a growing obsession with <strong>data</strong>. I'm the person who'll clean your messy dataset at 2am and actually enjoy it.",
