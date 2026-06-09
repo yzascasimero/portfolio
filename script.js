@@ -50,7 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // About
   const aboutFrame = document.getElementById('about-frame');
   if (aboutFrame) {
-    aboutFrame.querySelector('.initials').textContent = YZA.about.initials;
+    if (YZA.about.photo) {
+      aboutFrame.querySelector('.initials').style.display = 'none';
+      aboutFramme.style.backgroundImage = `url(${YZA.about.photo})`;
+      aboutFrame.style.backgroundSize = 'cover';
+      aboutFrame.style.backgroundPosition = 'center';
+    } else {
+      aboutFrame.querySelector('.initials').textContent = YZA.about.initials;
+    }
     aboutFrame.querySelector('.badge').textContent = YZA.about.badge;
   }
   const aboutTitle = document.getElementById('about-title');
