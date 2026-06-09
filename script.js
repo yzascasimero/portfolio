@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     devGrid.innerHTML = YZA.devProjects.map((p, i) => `
       <div class="dev-card ${p.size}">
         <div class="dev-card-visual ${colorMap[p.color] || 'vc-green'}">
-          <span>${p.emoji}</span>
+          <span>${p.photo ? `<img src="${p.photo}" alt="${p.title}">` : p.emoji}</span>
           <div class="dev-card-visual-num">0${i + 1}</div>
         </div>
         <div class="dev-card-body">

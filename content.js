@@ -60,24 +60,24 @@ const YZA = {
     {
       size:  "large",
       color: "green",
-      emoji: "🚀",
+      photo: "assets/betterfly-cover.png",
       tag:   "Featured Project",
-      title: "Your Best App / Website",
-      desc:  "What did you build? Who was it for? What problem did it solve? One punchy paragraph that proves you can ship.",
+      title: "Better-Fly Mobile App",
+      desc:  'For my senior undergraduate thesis, I collaborated with two talented computer engineering students and co-researchers to design and build "Better-Fly," an automated rearing system for caterpillar growth, specifically tailored for controlled laboratory and research environments. The system integrates real-time image-based monitoring with a calibrated micro-environment, solving the high-mortality risks associated with manual, non-standardized insect rearing by automating climate regulation and visual food level tracking. By leveraging python for automated image processing and Flutter and Android Studio environment for app development, and developing a robust hardware prototype that successfully passed defense requirements with no revisions, we demonstrated the ability to bridge complex technical software development with physical systems engineering to deliver a functional, research-grade solution from concept through to deployment.',
       tags:  ["Python", "JavaScript", "SQL"],
-      link:  "#"
+      link:  "https://drive.google.com/drive/folders/1K-k6N55upEonS4nFxUIVTdbeCrTno-jG?usp=sharing"
     },
     {
       size:  "small",
       color: "blue",
-      emoji: "🛠",
+      photo: "assets/casa-faeldo-cover.png",
       tag:   "Project 02",
-      title: "Second Dev Project",
-      desc:  "Short and specific — what makes it interesting?",
+      title: "Casa Faeldo Resort Online Food Ordering System",
+      desc:  "Partnered with a fellow computer engineering student and a web developer to design and deploy a full-stack ordering system for a local hospitality business to replace manual workflows with an automated digital platform. Fixed and polished a scalable MySQL database structure to handle real-time inventory and order processing. This system integrated a high-performance backend with an intuitive UI with HTML/CSS to enhance overall customer service and operational efficiency.",
       tags:  ["Python", "SQL"],
-      link:  "#",
+      link:  "https://drive.google.com/file/d/1Y8ipkVLnqPJG_IrMu57vrDBy086Uhs3t/view?usp=sharing",
     },
-    {
+    /*{
       size:  "small",
       color: "purple",
       emoji: "⚙️",
@@ -86,7 +86,7 @@ const YZA = {
       desc:  "A tool, a system, a side project — whatever you built for fun.",
       tags:  ["OOP", "Algorithms"],
       link:  "#",
-    },
+    },*/
   ],
 
   // ── DATA PROJECTS (Analytics) ─────────────────────────────
