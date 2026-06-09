@@ -65,7 +65,7 @@ const YZA = {
       title: "Your Best App / Website",
       desc:  "What did you build? Who was it for? What problem did it solve? One punchy paragraph that proves you can ship.",
       tags:  ["Python", "JavaScript", "SQL"],
-      link:  "#",
+      link:  "#"
     },
     {
       size:  "small",
