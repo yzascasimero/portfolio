@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yza Casimero — Portfolio</title>
+<meta name="description" content="Portfolio of Yza Casimero — Data Analyst & Software Developer">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<!-- 1. Your content (edit this!) -->
+<script src="content.js"></script>
+
+<!-- 2. Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSORS -->
+<div class="cur-dot" id="curDot"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo js-logo"></a>
+
+  <div class="nav-center">
+    <div class="mode-switcher">
+      <button class="mode-btn active" data-mode="dev">⌨ Dev</button>
+      <button class="mode-btn"        data-mode="data">📊 Data</button>
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" title="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-mesh">
+    <div class="mesh-circle"></div>
+    <div class="mesh-circle"></div>
+    <div class="mesh-circle"></div>
+  </div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div>
+      <div class="hero-eyebrow" id="hero-eyebrow"></div>
+      <h1 class="hero-name" id="hero-name"></h1>
+      <p class="hero-tagline" id="hero-tagline"></p>
+      <div class="hero-btns" id="hero-btns"></div>
+    </div>
+    <div class="hero-badge">
+      <div class="status-pill" id="status-pill">
+        <div class="status-dot"></div>
+        Available now
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    scroll
+  </div>
+</section>
+
+<!-- ── ABOUT ─────────────────────────────────────────────── -->
+<section class="about-section" id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+
+      <div class="about-avatar-wrap reveal">
+        <div class="about-frame" id="about-frame">
+          <span class="initials"></span>
+          <div class="about-frame-badge badge"></div>
+        </div>
+      </div>
+
+      <div class="reveal d1">
+        <div class="sec-label">About me</div>
+        <h2 class="about-title" id="about-title"></h2>
+        <div id="about-body"></div>
+        <div class="dual-cards">
+          <div class="dual-card" id="about-dev-card">
+            <div class="dual-card-icon"></div>
+            <div class="dual-card-title"></div>
+            <div class="dual-card-body"></div>
+          </div>
+          <div class="dual-card" id="about-data-card">
+            <div class="dual-card-icon"></div>
+            <div class="dual-card-title"></div>
+            <div class="dual-card-body"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────────────────────────── -->
+<section class="skills-section" id="skills">
+  <div class="section-wrap">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">What I know</div>
+        <h2 class="sec-title">Skills &amp; Tools</h2>
+      </div>
+      <div class="sec-num">02</div>
+    </div>
+    <div class="skills-grid reveal" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ───────────────────────────────────────────── -->
+<section class="projects-section" id="projects">
+  <div class="section-wrap">
+    <div class="sec-header reveal">
+      <div>
+        <div class="sec-label">Selected work</div>
+        <h2 class="sec-title">Projects</h2>
+      </div>
+      <div class="sec-num">03</div>
+    </div>
+
+    <div class="reveal">
+      <div class="tab-switcher">
+        <button class="tab-btn active" data-tab="dev">⌨ Web / App Dev</button>
+        <button class="tab-btn"        data-tab="data">📊 Data Analytics</button>
+      </div>
+    </div>
+
+    <div class="tab-panel active" id="tab-dev">
+      <div class="dev-grid" id="dev-grid"></div>
+    </div>
+
+    <div class="tab-panel" id="tab-data">
+      <div class="data-grid" id="data-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section class="contact-section" id="contact">
+  <div class="section-wrap">
+    <div class="contact-inner">
+
+      <div class="reveal">
+        <div class="sec-label">Get in touch</div>
+        <h2 class="contact-headline">
+          LET'S<br>BUILD<br><span>SOMETHING.</span>
+        </h2>
+        <p class="contact-sub" id="contact-sub"></p>
+      </div>
+
+      <div class="reveal d1">
+        <div class="contact-links" id="contact-links"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <span class="footer-logo js-logo"></span>
+  <span class="js-footer-name"></span>
+  <span class="js-footer-location"></span>
+</footer>
+
+<!-- 3. Interactions -->
+<script src="script.js"></script>
+</body>
+</html>
