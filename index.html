@@ -1,182 +1,207 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yza Casimero — Portfolio</title>
-<meta name="description" content="Portfolio of Yza Casimero — Data Analyst & Software Developer">
+<title>Yza Casimero — Software Developer | Aspiring Data Analyst</title>
+<meta name="description" content="Portfolio of Yza Casimero — Computer Engineering graduate, software developer, and rising data analyst.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- 1. Your content (edit this!) -->
-<script src="content.js"></script>
-
-<!-- 2. Styles -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- CURSORS -->
-<div class="cur-dot" id="curDot"></div>
-<div class="cur-ring" id="curRing"></div>
+<!-- Grain / noise overlay -->
+<div class="grain" aria-hidden="true"></div>
 
-<!-- ── NAV ─────────────────────────────────────────────── -->
-<nav>
-  <a href="#" class="nav-logo js-logo"></a>
+<!-- Custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
 
-  <div class="nav-center">
-    <div class="mode-switcher">
-      <button class="mode-btn active" data-mode="dev">⌨ Dev</button>
-      <button class="mode-btn"        data-mode="data">📊 Data</button>
-    </div>
+<!-- Signature scroll rail -->
+<div class="rail" aria-hidden="true">
+  <div class="rail-track">
+    <div class="rail-fill"></div>
   </div>
+  <span class="rail-label" id="railLabel">DEV</span>
+</div>
 
-  <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="theme-btn" id="themeBtn" title="Toggle theme">🌙</button>
+<!-- Loader -->
+<div class="loader" id="loader">
+  <span class="loader-mark">YC</span>
+</div>
+
+<!-- ───────────────────────── NAV ───────────────────────── -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">YC<span class="dot">.</span></a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#work" data-nav="work">Work</a>
+    <a href="#about" data-nav="about">About</a>
+    <a href="#learning" data-nav="learning">Learning</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="btn btn-ghost" id="resumeBtn" href="#" target="_blank" rel="noopener">Résumé</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </div>
-</nav>
+</header>
 
-<!-- ── HERO ─────────────────────────────────────────────── -->
-<section class="hero">
-  <div class="hero-mesh">
-    <div class="mesh-circle"></div>
-    <div class="mesh-circle"></div>
-    <div class="mesh-circle"></div>
-  </div>
-  <div class="hero-grid"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#learning">Learning</a>
+  <a href="#contact">Contact</a>
+  <a id="mobileResume" href="#" target="_blank" rel="noopener" class="mm-resume">Download résumé →</a>
+</div>
 
-  <div class="hero-content">
-    <div>
-      <div class="hero-eyebrow" id="hero-eyebrow"></div>
-      <h1 class="hero-name" id="hero-name"></h1>
-      <p class="hero-tagline" id="hero-tagline"></p>
-      <div class="hero-btns" id="hero-btns"></div>
-    </div>
-    <div class="hero-badge">
-      <div class="status-pill" id="status-pill">
-        <div class="status-dot"></div>
-        Available now
+<main id="top">
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero" id="hero">
+    <p class="hero-eyebrow"><span>COMPUTER ENGINEERING &nbsp;·&nbsp; MARINDUQUE, PH &nbsp;·&nbsp; CLASS OF '26</span></p>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="line" data-reveal>Yza</span>
+          <span class="line accent-clip" data-reveal>Casimero</span>
+        </h1>
+        <p class="hero-tagline" data-reveal>
+          Jarvis wasn't built in a day. But our next project could be.
+          <span class="tagline-soft">I am lying but this is such a cool reference so..</span>
+        </p>
+
+        <div class="hero-cta" data-reveal>
+          <a href="#work" class="btn btn-primary">See the work</a>
+          <a href="#contact" class="btn btn-text">Get in touch <span class="arrow">→</span></a>
+        </div>
+
+        <div class="hero-status" data-reveal>
+          <span class="status-dot"></span> Open to opportunities
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="hero-photo-mask">
+          <img src="assets/grad-pic.png" alt="Portrait of Yza Casimero" />
+        </div>
+        <span class="hero-photo-tag">SOFTWARE&nbsp;DEV → DATA&nbsp;ANALYTICS</span>
       </div>
     </div>
-  </div>
 
-  <div class="hero-scroll">
-    <div class="scroll-track"><div class="scroll-thumb"></div></div>
-    scroll
-  </div>
-</section>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to next section">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
 
-<!-- ── ABOUT ─────────────────────────────────────────────── -->
-<section class="about-section" id="about">
-  <div class="section-wrap">
+  <!-- ───────────────────────── ABOUT ───────────────────────── -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title">
+        <span data-reveal>Builder by training.</span>
+        <span class="ink-soft" data-reveal>Analyst by curiosity.</span>
+      </h2>
+    </div>
+
     <div class="about-grid">
+      <div class="about-copy">
+        <p data-reveal>Fresh Computer Engineering graduate with a solid grounding in <strong>software development</strong> and a growing pull toward <strong>data</strong>. I'm the kind of person who'll clean a messy dataset at 2am and genuinely enjoy it.</p>
+        <p data-reveal>I like making pretty and functional websites/applications. I always make sure they work as intended before presenting them. I like stressing myself out just to produce something I'm proud of.</p>
 
-      <div class="about-avatar-wrap reveal">
-        <div class="about-frame" id="about-frame">
-          <div class="about-frame-badge badge"></div>
-        </div>
-      </div>
+        <ul class="trait-chips" aria-label="Personality traits" data-reveal>
+          <li>Curious</li><li>Analytical</li><li>Adaptable</li><li>Detail-oriented</li><li>Fearless, elegantly</li>
+        </ul>
 
-      <div class="reveal d1">
-        <div class="sec-label">About me</div>
-        <h2 class="about-title" id="about-title"></h2>
-        <div id="about-body"></div>
-        <div class="dual-cards">
-          <div class="dual-card" id="about-dev-card">
-            <div class="dual-card-icon"></div>
-            <div class="dual-card-title"></div>
-            <div class="dual-card-body"></div>
-          </div>
-          <div class="dual-card" id="about-data-card">
-            <div class="dual-card-icon"></div>
-            <div class="dual-card-title"></div>
-            <div class="dual-card-body"></div>
+        <div class="credential" data-reveal>
+          <span class="credential-icon">🎓</span>
+          <div>
+            <p class="credential-title">B.S. Computer Engineering</p>
+            <p class="credential-sub">Class of 2026 · Philippines</p>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ── SKILLS ─────────────────────────────────────────────── -->
-<section class="skills-section" id="skills">
-  <div class="section-wrap">
-    <div class="sec-header reveal">
-      <div>
-        <div class="sec-label">What I know</div>
-        <h2 class="sec-title">Skills &amp; Tools</h2>
+      <div class="track-cards">
+        <div class="track-card track-dev" data-tilt>
+          <span class="track-icon">⌨️</span>
+          <h3>Dev track</h3>
+          <p>Where I've spent my training — building working software, end to end.</p>
+        </div>
+        <div class="track-card track-data" data-tilt>
+          <span class="track-icon">📊</span>
+          <h3>Data track</h3>
+          <p>Where I'm headed next — turning that same rigor toward messy, real datasets.</p>
+        </div>
       </div>
-      <div class="sec-num">02</div>
     </div>
-    <div class="skills-grid reveal" id="skills-grid"></div>
-  </div>
-</section>
+  </section>
 
-<!-- ── PROJECTS ───────────────────────────────────────────── -->
-<section class="projects-section" id="projects">
-  <div class="section-wrap">
-    <div class="sec-header reveal">
-      <div>
-        <div class="sec-label">Selected work</div>
-        <h2 class="sec-title">Projects</h2>
+  <!-- ───────────────────────── SKILLS ───────────────────────── -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="eyebrow">What I know</span>
+      <h2 class="section-title" data-reveal>Skills &amp; tools</h2>
+    </div>
+
+    <div class="skills-grid" id="skillsGrid"><!-- injected --></div>
+  </section>
+
+  <!-- ───────────────────────── WORK ───────────────────────── -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <span class="eyebrow">Selected work</span>
+      <h2 class="section-title" data-reveal>Things I've shipped</h2>
+    </div>
+
+    <div class="projects" id="projectsList"><!-- injected --></div>
+  </section>
+
+  <!-- ───────────────────────── LEARNING ───────────────────────── -->
+  <section class="learning" id="learning">
+    <div class="section-head">
+      <span class="eyebrow">In progress</span>
+      <h2 class="section-title" data-reveal>Currently learning: data analytics</h2>
+      <p class="learning-sub" data-reveal>No fabricated case studies here, just an honest look at what I'm actively building toward, tool by tool.</p>
+    </div>
+
+    <div class="learning-body">
+      <div class="learning-tools" id="learningTools"><!-- injected --></div>
+      <div class="learning-note" data-tilt>
+        <p>I'm building real projects with this stack right now. When they're ready, they'll replace this paragraph.</p>
+        <span class="learning-note-mark">— Yza</span>
       </div>
-      <div class="sec-num">03</div>
     </div>
+  </section>
 
-    <div class="reveal">
-      <div class="tab-switcher">
-        <button class="tab-btn active" data-tab="dev">⌨ Web / App Dev</button>
-      <!--  <button class="tab-btn"        data-tab="data">📊 Data Analytics</button>
-      </div> --> 
-    </div>
-
-    <div class="tab-panel active" id="tab-dev">
-      <div class="dev-grid" id="dev-grid"></div>
-    </div>
-
-    <div class="tab-panel" id="tab-data">
-      <div class="data-grid" id="data-grid"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ────────────────────────────────────────────── -->
-<section class="contact-section" id="contact">
-  <div class="section-wrap">
+  <!-- ───────────────────────── CONTACT ───────────────────────── -->
+  <section class="contact" id="contact">
     <div class="contact-inner">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="contact-headline" data-reveal>Let's build<br>something.</h2>
+      <p class="contact-sub" data-reveal>Open to data analyst roles, software positions, and interesting problems worth solving. I reply fast — and I learn faster.</p>
 
-      <div class="reveal">
-        <div class="sec-label">Get in touch</div>
-        <h2 class="contact-headline">
-          LET'S<br>BUILD<br><span>SOMETHING.</span>
-        </h2>
-        <p class="contact-sub" id="contact-sub"></p>
-      </div>
-
-      <div class="reveal d1">
-        <div class="contact-links" id="contact-links"></div>
-      </div>
-
+      <div class="contact-links" id="contactLinks"><!-- injected --></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── FOOTER ─────────────────────────────────────────────── -->
-<footer>
-  <span class="footer-logo js-logo"></span>
-  <span class="js-footer-name"></span>
-  <span class="js-footer-location"></span>
+</main>
+
+<footer class="footer">
+  <span class="footer-mark">YC<span class="dot">.</span></span>
+  <span class="footer-meta" id="footerMeta"></span>
+  <span class="footer-year"></span>
 </footer>
 
-<!-- 3. Interactions -->
+<script src="content.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

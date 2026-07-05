@@ -1,120 +1,79 @@
+/* ────────────────────────────────────────────────────────────────
+   YZA'S PORTFOLIO — CONTENT FILE
+   This is the only file you should need to edit day-to-day.
+   Change text, links, and projects here — the design stays intact.
+   ──────────────────────────────────────────────────────────────── */
 
 const YZA = {
 
-  // ── PERSONAL INFO ──────────────────────────────────────────
-  name:       "Yza Casimero",
-  role:       "Data Analyst & Software Developer",
-  location:   "Marinduque, Philippines",
-  available:  true,           // shows the green "Available now" dot
-  email:      "yzasoliscasimero@gmail.com",
-  linkedin:   "https://www.linkedin.com/in/yzacasimero/",
-  github:     "https://github.com/yzascasimero",
-  resumeUrl:  "https://drive.google.com/file/d/1cXHl9471GbcwkufUo7dUtziszu3TdN23/view?usp=sharing",
+  // ── PERSONAL / LINKS ──────────────────────────────────────────
+  name:      "Yza Casimero",
+  location:  "Marinduque, Philippines",
+  email:     "yzasoliscasimero@gmail.com",
+  linkedin:  "https://www.linkedin.com/in/yzacasimero/",
+  github:    "https://github.com/yzascasimero",
+  resumeUrl: "https://drive.google.com/file/d/1PrAzXAT6Ju7Ivt40v8QKxO2CYovEecSt/view?usp=sharing",
 
-  // ── HERO LINES ───────────────────────────────────────────
-  heroLines: [
-    "Data mind.",
-    "Dev roots.",       // ← this line gets the lime underline
-    "Ready now.",       // ← this line is italic/secondary
-  ],
-
-  // ── HERO TAGLINE ──────────────────────────────────────────
-  heroTagline: "Fresh graduate with strong skills in Python, SQL, and data analysis — and a software background that makes me think differently.",
-
-  // ── ABOUT ─────────────────────────────────────────────────
-  about: {
-    badge:     "Class of '26",
-    photo:    "assets/profile.jpg",  
-    title:     ["Builder.", "Analyst.", "Curious mind."],  // 3 lines, middle gets lime color
-    paragraphs: [
-      "Fresh Computer Engineering graduate with strong chops in <strong>software development</strong> and a growing obsession with <strong>data</strong>. I'm the person who'll clean your messy dataset at 2am and actually enjoy it.",
-      "My LinkedIn attracts data roles on its own — which tells me something about where I naturally land.",
-    ],
-    devCard: {
-      icon:  "⌨️",
-      title: "Dev Track",
-      body:  "Prioritizing utility and system performance in every build.",
-    },
-    dataCard: {
-      icon:  "📊",
-      title: "Data Track",
-      body:  "Technical data analysis and systems management via Python, SQL, and Pandas.",
-    },
-  },
-
-  // ── SKILLS ────────────────────────────────────────────────
-  // pct: fill level for the bar (0–100)
-  skills: [
-    { icon: "🐍", name: "Python",       desc: "Pipelines, automation, analysis, scripting",  pct: 85 },
-    { icon: "🗄️", name: "SQL",          desc: "Complex queries, joins, schema design",        pct: 80 },
-    { icon: "🐼", name: "pandas",       desc: "Wrangling, cleaning, exploratory analysis",    pct: 82 },
-    { icon: "📊", name: "Excel",        desc: "Pivot tables, formulas, dashboards",           pct: 90 },
-    { icon: "💻", name: "Software Dev", desc: "OOP, algorithms, clean code",                  pct: 72 },
-    { icon: "🔬", name: "Research",     desc: "Analysis, documentation, structured thinking", pct: 78 },
-  ],
-
-  // ── DEV PROJECTS (Web / App) ──────────────────────────────
-  // size: "large" (takes 4 cols) | "small" (takes 2 cols)
-  // color: "green" | "blue" | "purple"
-  devProjects: [
+  // ── SKILLS ─────────────────────────────────────────────────────
+  // Grouped by category. `learning: true` renders the category with
+  // a "learning" tag style instead of a mastered-skill style.
+  skillGroups: [
     {
-      size:  "large",
-      color: "green",
+      category: "Programming Languages",
+      items: ["Python", "JavaScript", "SQL", "Dart"],
+    },
+    {
+      category: "Web Development",
+      items: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    },
+    {
+      category: "Mobile Development",
+      items: ["Flutter", "Android Studio"],
+    },
+    {
+      category: "Database",
+      items: ["MySQL", "Schema Design"],
+    },
+    {
+      category: "Tools",
+      items: ["VS Code", "Jupyter Notebook", "Google Colab"],
+    },
+    {
+      category: "Version Control",
+      items: ["Git", "GitHub"],
+    },
+    {
+      category: "Data Analytics",
+      items: ["Python", "SQL", "Excel", "Power BI", "pandas", "NumPy", "Data Visualization", "Statistics"],
+      learning: true,
+    },
+  ],
+
+  // ── DEV PROJECTS ────────────────────────────────────────────────
+  projects: [
+    {
+      tag:   "Undergraduate Thesis",
+      title: "Better-Fly — Automated Caterpillar Rearing System",
       photo: "assets/betterfly-cover.png",
-      tag:   "Featured Project",
-      title: "Better-Fly Mobile App",
-      desc:  'For my senior undergraduate thesis, I collaborated with two talented computer engineering students and co-researchers to design and build "Better-Fly," an automated rearing system for caterpillar growth, specifically tailored for controlled laboratory and research environments. The system integrates real-time image-based monitoring with a calibrated micro-environment, solving the high-mortality risks associated with manual, non-standardized insect rearing by automating climate regulation and visual food level tracking. By leveraging python for automated image processing and Flutter and Android Studio environment for app development, and developing a robust hardware prototype that successfully passed defense requirements with no revisions, we demonstrated the ability to bridge complex technical software development with physical systems engineering to deliver a functional, research-grade solution from concept through to deployment.',
-      tags:  ["Python", "JavaScript", "SQL"],
-      link:  "https://drive.google.com/drive/folders/1K-k6N55upEonS4nFxUIVTdbeCrTno-jG?usp=sharing"
+      desc:  "Co-built an automated rearing system for controlled insect research, replacing manual, high-mortality workflows with real-time image monitoring and calibrated climate control. I led the development of the Flutter/Android app and assisted in the Python image-processing pipeline, working alongside two co-researchers to take the project from concept through a hardware prototype that passed defense with no revisions.",
+      tags:  ["Python", "Flutter", "Android Studio", "Image Processing"],
+      link:  "https://drive.google.com/drive/folders/1K-k6N55upEonS4nFxUIVTdbeCrTno-jG?usp=sharing",
     },
     {
-      size:  "small",
-      color: "blue",
+      tag:   "Client Project",
+      title: "Casa Faeldo — Resort Ordering System",
       photo: "assets/casa-faeldo-cover.png",
-      tag:   "Project 02",
-      title: "Casa Faeldo Resort Online Food Ordering System",
-      desc:  "Partnered with a fellow computer engineering student and a web developer to design and deploy a full-stack ordering system for a local hospitality business to replace manual workflows with an automated digital platform. Fixed and polished a scalable MySQL database structure to handle real-time inventory and order processing. This system integrated a high-performance backend with an intuitive UI with HTML/CSS to enhance overall customer service and operational efficiency.",
-      tags:  ["Python", "SQL"],
+      desc:  "Partnered with a fellow engineer and a web developer to replace a resort's manual order-taking with a full digital platform. I designed and hardened the MySQL schema behind real-time inventory and order processing, then paired it with a clean HTML/CSS interface built for actual front-desk use.",
+      tags:  ["MySQL", "Python", "HTML/CSS"],
       link:  "https://drive.google.com/file/d/1Y8ipkVLnqPJG_IrMu57vrDBy086Uhs3t/view?usp=sharing",
     },
-    /*{
-      size:  "small",
-      color: "purple",
-      emoji: "⚙️",
-      tag:   "Project 03",
-      title: "Third Dev Project",
-      desc:  "A tool, a system, a side project — whatever you built for fun.",
-      tags:  ["OOP", "Algorithms"],
-      link:  "#",
-    },*/
   ],
 
-  // ── DATA PROJECTS (Analytics) ─────────────────────────────
-  dataProjects: [
-    {
-      type:  "Data Analysis",
-      title: "Your Best Data Project",
-      desc:  "What dataset did you work with? What insight did you surface? What decision did it inform?",
-      tags:  ["Python", "pandas", "Matplotlib", "SQL"],
-      link:  "#",
-    },
-    {
-      type:  "Dashboard / Viz",
-      title: "Second Data Project",
-      desc:  "A dashboard, a report, or an exploratory analysis — show what you found.",
-      tags:  ["Excel", "SQL", "pandas"],
-      link:  "#",
-    },
-    {
-      type:  "Research / Analysis",
-      title: "Third Data Project",
-      desc:  "Thesis, capstone, or personal project. If the data told a story, write it here.",
-      tags:  ["Python", "Research", "Excel"],
-      link:  "#",
-    },
+  // ── CONTACT LINKS ───────────────────────────────────────────────
+  contactLinks: [
+    { label: "Email",    value: "yzasoliscasimero@gmail.com", href: "mailto:yzasoliscasimero@gmail.com" },
+    { label: "LinkedIn", value: "in/yzacasimero",              href: "https://www.linkedin.com/in/yzacasimero/" },
+    { label: "GitHub",   value: "yzascasimero",                href: "https://github.com/yzascasimero" },
   ],
-
-  // ── CONTACT SECTION TAGLINE ───────────────────────────────
-  contactTagline: "Open to data roles, software positions, and interesting projects. Fast learner, quick replier.",
 
 };
