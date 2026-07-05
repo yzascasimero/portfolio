@@ -448,16 +448,6 @@ section{ padding: 120px var(--pad); }
   .hero{ padding-top: 32px; text-align: left; }
   .hero-eyebrow{ font-size: 10px; }
   .scroll-cue{ display:none; }
-
-  .hero-photo-tag{
-    position: static;
-    display: block;
-    writing-mode: horizontal-tb;
-    transform: none;
-    text-align: center;
-    margin-top: 14px;
-    padding: 0;
-    background: none;
   }
 
   .about-grid, .learning-body{ grid-template-columns: 1fr; }
