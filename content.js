@@ -1,9 +1,3 @@
-/* ────────────────────────────────────────────────────────────────
-   YZA'S PORTFOLIO — CONTENT FILE
-   This is the only file you should need to edit day-to-day.
-   Change text, links, and projects here — the design stays intact.
-   ──────────────────────────────────────────────────────────────── */
-
 const YZA = {
 
   // ── PERSONAL / LINKS ──────────────────────────────────────────
@@ -15,8 +9,7 @@ const YZA = {
   resumeUrl: "https://drive.google.com/file/d/1PrAzXAT6Ju7Ivt40v8QKxO2CYovEecSt/view?usp=sharing",
 
   // ── SKILLS ─────────────────────────────────────────────────────
-  // Grouped by category. `learning: true` renders the category with
-  // a "learning" tag style instead of a mastered-skill style.
+
   skillGroups: [
     {
       category: "Programming Languages",

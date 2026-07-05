@@ -1,6 +1,3 @@
-/* ────────────────────────────────────────────────────────────────
-   RENDER — pulls from content.js (the YZA object) into the DOM
-   ──────────────────────────────────────────────────────────────── */
 function renderContent(){
   // Resume links
   document.getElementById("resumeBtn").href = YZA.resumeUrl;
@@ -37,7 +34,7 @@ function renderContent(){
     </article>
   `).join("");
 
-  // Learning tools (pulled from the Data Analytics skill group so it stays in one place)
+  // Learning tools 
   const dataGroup = YZA.skillGroups.find(g => g.learning);
   document.getElementById("learningTools").innerHTML = dataGroup.items.map(t => `<span class="tool">${t}</span>`).join("");
 
